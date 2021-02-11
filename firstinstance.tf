@@ -4,7 +4,7 @@ provider "aws" {
     secret_key = "5zspeRyDNqqI5UiQV/DUzOf2RSiByvkhTy+wG/bW"
   }
 
-  resource aws_instance "instance1" {
+  resource "aws_instance" "instance1" {
     instance_type = "t2.micro"
     ami = "ami-052ed3344670027b3"
   }
